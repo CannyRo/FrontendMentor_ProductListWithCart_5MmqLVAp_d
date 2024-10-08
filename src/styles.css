@@ -34,3 +34,15 @@ body{
     line-height: 21px;
     font-weight: 400;
 }
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.footer--link{
+    color: var(--Red);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
