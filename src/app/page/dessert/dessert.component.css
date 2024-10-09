@@ -1,0 +1,24 @@
+.layout{
+    padding: 24px;
+    width: 100%;
+}
+.dessert{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width: 768px){
+    .layout{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+}
+@media(min-width: 1440px){
+    .layout{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 88px 40px;
+        gap: 32px;
+    }
+}

@@ -1,6 +1,10 @@
-<div>
-    <h2>dessert works!</h2>
-    <app-product-list></app-product-list>
-    <app-cart-list></app-cart-list>
-    <app-cart-modal></app-cart-modal>
+<div class="layout">
+    <div class="dessert">
+        <h2>{{categoryTitle}}</h2>
+        <app-product-list></app-product-list>
+    </div>
+    <div class="cart">
+        <app-cart-list></app-cart-list>
+        <app-cart-modal></app-cart-modal>
+    </div>
 </div>
