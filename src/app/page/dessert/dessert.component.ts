@@ -11,5 +11,5 @@ import { CartModalComponent } from "../../component/cart-modal/cart-modal.compon
   styleUrl: './dessert.component.css'
 })
 export class DessertComponent {
-
+  categoryTitle = 'Desserts'
 }
