@@ -1,0 +1,39 @@
+.cart > .modal--test {
+    display: none;
+}
+.cart:has( > .input--modal:checked ) > .modal--test {
+    display: flex;
+}
+.button--modal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    width: 100%;
+    height: 53px;
+    color: var(--White);
+    background-color: var(--Red);
+    border-radius: 32px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    border: none;
+    border-radius: 53px;
+}
+/* .input--modal::after{
+    content: 'Confirm Order';
+    color: var(--White);
+    background-color: var(--Red);
+} */
+.modal--test{
+    display: none;
+    color: black;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+.show{
+    display: flex;
+}
+
