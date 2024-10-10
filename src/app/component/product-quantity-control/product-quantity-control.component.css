@@ -49,7 +49,7 @@
     border: 1px solid var(--Red);
     border-radius: 99px;
     overflow: hidden;
-    cursor: pointer;
+    
 }
 .card--quantity-controls-left, .card--quantity-controls-right{
     display: flex;
@@ -61,6 +61,7 @@
     background-color: var(--Red);
     border: 1px solid var(--White);
     border-radius: 18px;
+    cursor: pointer;
 }
 .card--quantity-controls-left:hover, 
 .card--quantity-controls-left:focus-visible, 

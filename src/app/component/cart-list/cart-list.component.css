@@ -68,6 +68,11 @@
     background: var(--White);
     border-radius: 20px;
     border: 1px solid var(--Rose-400);
+    cursor: pointer;
+}
+.cart--item--btn:hover, .cart--item--btn:focus-visible, .cart--item--btn:focus, .cart--item--btn:active{
+    color: var(--Rose-900);
+    border-color: var(--Rose-900);
 }
 .cart--total--text, .cart--carbon--text{
     font-weight: 400;

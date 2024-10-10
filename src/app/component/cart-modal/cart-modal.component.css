@@ -21,6 +21,10 @@
     font-weight: 600;
     border: none;
     border-radius: 53px;
+    cursor: pointer;
+}
+.button--modal:hover, .button--modal:focus-visible, .button--modal:focus, .button--modal:active{
+    background-color: var(--Red--700);
 }
 .modal--background{
     display: none;
