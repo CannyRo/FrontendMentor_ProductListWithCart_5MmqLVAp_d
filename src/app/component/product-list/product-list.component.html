@@ -1,2 +1,14 @@
-<p>product-list works!</p>
-<app-product-quantity-control></app-product-quantity-control>
+<div class="card-container">
+    @for( product of productList(); track product.name){
+    <div class="card">
+        <div class="card--image-thumbnail" [ngStyle]="{'background-image': 'url('+product.image.desktop+')'}">
+        </div>
+        <app-product-quantity-control></app-product-quantity-control>
+        <div class="card--text">
+            <p class="card--category">{{product.category}}</p>
+            <p class="card--title">{{product.name}}</p>
+            <p class="card--price">{{product.price | currency:'USD':'symbol':'1.2-2' }}</p>
+        </div>
+    </div>
+    }
+</div>

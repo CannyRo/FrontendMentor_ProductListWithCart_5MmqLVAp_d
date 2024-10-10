@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { CartItem } from '../../product.model';
 
 
 @Component({
@@ -9,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrl: './cart-list.component.css'
 })
 export class CartListComponent {
-
+  cart = input<CartItem[]>();
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { CartItem } from '../../product.model';
 
 @Component({
   selector: 'app-cart-modal',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './cart-modal.component.css'
 })
 export class CartModalComponent {
-
+  cart = input<CartItem[]>();
 }

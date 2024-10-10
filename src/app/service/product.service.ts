@@ -25,7 +25,7 @@ export class ProductService {
     this.cart.update( cart => [...cart, {product: product, quantity:1}]);
   }
 
-  incraseProduct(product: Product) {
+  increaseProduct(product: Product) {
     console.log('Increase product : ', product);
     this.cart.update( cart => 
       cart.map( cartItem => cartItem.product.name === product.name ?

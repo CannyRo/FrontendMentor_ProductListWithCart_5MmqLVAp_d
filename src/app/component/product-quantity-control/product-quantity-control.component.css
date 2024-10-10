@@ -1,0 +1,78 @@
+.card--button{
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 11px;
+    margin: 0 auto;
+    width: 160px;
+    height: auto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--Rose-900);
+    background-color: var(--White);
+    border: 1px solid var(--Rose-400);
+    border-radius: 99px;
+    cursor: pointer;
+}
+.card--button:hover, 
+.card--button:focus, 
+.card--button:focus-visible, 
+.card--button:active{
+    color: var(--Red);
+    border-color: var(--Red);
+}
+.card--button--icon{
+    margin-right: 8px;
+}
+
+.card--quantity-controls{
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 11px;
+    width: 160px;
+    height: auto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--White);
+    background-color: var(--Red);
+    border: 1px solid var(--Red);
+    border-radius: 99px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card--quantity-controls-left, .card--quantity-controls-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: var(--White);
+    background-color: var(--Red);
+    border: 1px solid var(--White);
+    border-radius: 18px;
+}
+.card--quantity-controls-left:hover, 
+.card--quantity-controls-left:focus-visible, 
+.card--quantity-controls-left:focus, 
+.card--quantity-controls-left:active, 
+.card--quantity-controls-right:hover,
+.card--quantity-controls-right:focus-visible,
+.card--quantity-controls-right:focus,
+.card--quantity-controls-right:active{
+    color: var(--Red);
+    background-color: var(--White);
+}
+.card--quantity-controls-middle{
+    text-align: center;
+}
