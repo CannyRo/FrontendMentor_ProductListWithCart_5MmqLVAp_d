@@ -1,17 +1,17 @@
-@if(isInCart(dessert()); as cartItem){
+@if(isInCart(product()); as cartItem){
     <div class="card--quantity-controls">
-        <button 
+        <button (click)="decreaseProduct(product())"
         class="card--quantity-controls-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="currentColor" d="M0 .375h10v1.25H0V.375Z"/></svg>
         </button>
         <span class="card--quantity-controls-middle">{{ cartItem.quantity }}</span>
-        <button 
+        <button (click)="increaseProduct(product())"
         class="card--quantity-controls-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="currentColor" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
         </button>
     </div>
     } @else {
-    <button class="card--button">
+    <button class="card--button" (click)="addProduct(product())">
         <svg class="card--button--icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
             viewBox="0 0 21 20">
             <g fill="#C73B0F" clip-path="url(#a)">

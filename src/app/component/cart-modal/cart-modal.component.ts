@@ -1,5 +1,5 @@
-import { Component, input } from '@angular/core';
-import { CartItem } from '../../product.model';
+import { Component, input, output } from '@angular/core';
+import { CartItem, Product } from '../../product.model';
 
 @Component({
   selector: 'app-cart-modal',
@@ -10,4 +10,12 @@ import { CartItem } from '../../product.model';
 })
 export class CartModalComponent {
   cart = input<CartItem[]>();
+  orderTotal = input<number>(0);
+
+  resetCart = output<any>();
+
+
+  resetMyCart(){
+    this.resetCart.emit(this.cart());
+  }
 }

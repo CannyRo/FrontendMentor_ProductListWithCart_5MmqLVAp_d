@@ -1,4 +1,4 @@
-import { computed, inject, Injectable, signal } from '@angular/core';
+import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { DataService } from './data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { CartItem, Product } from '../product.model';
@@ -17,8 +17,14 @@ export class ProductService {
   sumOfProduct = computed(()=> {
     return this.cart().reduce((total, cartItem) => total + cartItem.quantity, 0);
   })
+  orderTotal = computed(()=> {
+    return this.cart().reduce((total, cartItem) => total + (cartItem.quantity * cartItem.product.price), 0);
+  })
 
-  constructor() {}
+  constructor() {
+    effect(()=> console.log('Cart is updated in ProductService ==> ', this.cart()));
+    
+  }
 
   addProduct(product: Product) {
     console.log('Add product : ', product);
@@ -50,8 +56,8 @@ export class ProductService {
       cartItem.product.name !== product.name));
   }
 
-  resetCart() {
-    console.log('Reset cart');
+  resetCart(cart: CartItem[]) {
+    console.log('Reset cart', cart);
     this.cart.set([]);
   }
 
