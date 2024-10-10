@@ -116,7 +116,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+        "repo": "https://github.com/CannyRo/FrontendMentor_ProductListWithCart_5MmqLVAp_d.git",
+        "branch": "gh-pages",
+        "dir": "dist/frontend-mentor-product-list-with-cart-5-mmq-lvap-d/browser"
         }
       }
     }
