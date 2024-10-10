@@ -21,16 +21,32 @@ export class CartModalComponent {
 
   myButton = viewChild<ElementRef>('showModal');
   myModal = viewChild<ElementRef>('myModal');
+  body = viewChild<ElementRef>('body');
 
-  toggleModal() {
-    console.log('Show modal!!!');
+  lastScrollPosition = 0;
+
+
+
+  openModal() {
+    console.log('Open and show modal!!!');
+    this.lastScrollPosition = window.scrollY;
+    this.body()?.nativeElement.addClass('modal-open');
     this.myModal()?.nativeElement.classList.toggle('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  closeModal(){
+    console.log('Close and hide modal!!!');
+    this.body()?.nativeElement.removeClass('modal-open');
+    this.myModal()?.nativeElement.classList.toggle('show');
+    window.scrollTo({ top: this.lastScrollPosition, behavior: 'smooth' });
   }
 
 
 
   resetMyCart(){
     this.resetCart.emit(this.cart());
-    this.toggleModal();
+    this.body()?.nativeElement.removeClass('modal-open');
+    this.myModal()?.nativeElement.classList.toggle('show');
   }
 }
