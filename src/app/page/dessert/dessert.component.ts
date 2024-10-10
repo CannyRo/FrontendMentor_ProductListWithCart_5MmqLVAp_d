@@ -13,26 +13,5 @@ import { Product } from '../../product.model';
   styleUrl: './dessert.component.css'
 })
 export class DessertComponent {
-  // readonly productService = inject(ProductService);
-  // readonly productList = this.productService.productList;
   readonly categoryTitle = 'Desserts';
-
-  // cart = this.productService.cart;
-  // sumOfProduct = this.productService.sumOfProduct;
-
-  // addProduct(product: Product){
-  //   this.productService.addProduct(product);
-  // }
-  // increaseProduct(product: Product){
-  //   this.productService.increaseProduct(product);
-  // }
-  // decreaseProduct(product: Product){
-  //   this.productService.decreaseProduct(product);
-  // }
-  // removeProduct(product: Product){
-  //   this.productService.removeProduct(product);
-  // }
-  // resetCart(){
-  //   this.productService.resetCart();
-  // }
 }
