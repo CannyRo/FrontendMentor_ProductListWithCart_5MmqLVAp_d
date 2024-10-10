@@ -39,6 +39,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/frontend-mentor-product-list-with-cart-5-mmq-lvap-d",
+            "baseHref": "/FrontendMentor_ProductListWithCart_5MmqLVAp_d/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -84,10 +85,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "FrontendMentor_ProductListWithCart_5MmqLVAp_d:build:production"
+              "buildTarget": "frontend-mentor-product-list-with-cart-5-mmq-lvap-d:build:production"
             },
             "development": {
-              "buildTarget": "FrontendMentor_ProductListWithCart_5MmqLVAp_d:build:development"
+              "buildTarget": "frontend-mentor-product-list-with-cart-5-mmq-lvap-d:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -118,9 +119,10 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-        "repo": "https://github.com/CannyRo/FrontendMentor_ProductListWithCart_5MmqLVAp_d.git",
-        "branch": "gh-pages",
-        "dir": "dist/frontend-mentor-product-list-with-cart-5-mmq-lvap-d/browser"
+            "repo": "https://github.com/CannyRo/FrontendMentor_ProductListWithCart_5MmqLVAp_d.git",
+            "branch": "gh-pages",
+            "dir": "dist/frontend-mentor-product-list-with-cart-5-mmq-lvap-d/browser"
+          }
         }
       }
     }
