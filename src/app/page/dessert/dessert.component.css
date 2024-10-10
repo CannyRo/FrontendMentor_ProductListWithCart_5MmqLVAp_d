@@ -6,6 +6,15 @@
     display: flex;
     flex-direction: column;
 }
+.title{
+    margin-bottom: 32px;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-stretch:normal;
+    font-weight:bold;
+    font-size: 40px;
+    line-height: 48px;
+}
 @media(min-width: 768px){
     .layout{
         display: flex;

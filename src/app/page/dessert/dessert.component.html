@@ -1,10 +1,18 @@
 <div class="layout">
     <div class="dessert">
-        <h2>{{categoryTitle}}</h2>
-        <app-product-list></app-product-list>
+        <h2 class="title">{{categoryTitle}}</h2>
+        <app-product-list
+        [productList]="productList()"
+        [cart]="cart()"
+
+        ></app-product-list>
     </div>
     <div class="cart">
-        <app-cart-list></app-cart-list>
-        <app-cart-modal></app-cart-modal>
+        <app-cart-list
+        [cart]="cart()"
+        ></app-cart-list>
+        <app-cart-modal
+        [cart]="cart()"
+        ></app-cart-modal>
     </div>
 </div>
