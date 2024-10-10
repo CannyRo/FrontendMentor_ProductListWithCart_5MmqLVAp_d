@@ -1,18 +1,24 @@
 <div class="layout">
     <div class="dessert">
         <h2 class="title">{{categoryTitle}}</h2>
+        <!--
         <app-product-list
         [productList]="productList()"
         [cart]="cart()"
-
+        (addProduct)="addProduct($event)"
+        (increaseProduct)="increaseProduct($event)"
+        (decreaseProduct)="decreaseProduct($event)"
         ></app-product-list>
+        -->
+        <app-product-list></app-product-list>
     </div>
     <div class="cart">
+        <!--
         <app-cart-list
         [cart]="cart()"
+        [sumOfProduct]="sumOfProduct()"
         ></app-cart-list>
-        <app-cart-modal
-        [cart]="cart()"
-        ></app-cart-modal>
+        -->
+        <app-cart-list></app-cart-list>
     </div>
 </div>

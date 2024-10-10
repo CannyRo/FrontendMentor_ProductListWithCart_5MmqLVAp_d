@@ -3,7 +3,13 @@
     <div class="card">
         <div class="card--image-thumbnail" [ngStyle]="{'background-image': 'url('+product.image.desktop+')'}">
         </div>
-        <app-product-quantity-control></app-product-quantity-control>
+        <app-product-quantity-control
+            [product]="product"
+            [cart]="cart()"
+            (addNewProduct)="addProduct($event)" 
+            (increaseThisProduct)="increaseProduct($event)" 
+            (decreaseThisProduct)="decreaseProduct($event)"
+        ></app-product-quantity-control>
         <div class="card--text">
             <p class="card--category">{{product.category}}</p>
             <p class="card--title">{{product.name}}</p>
