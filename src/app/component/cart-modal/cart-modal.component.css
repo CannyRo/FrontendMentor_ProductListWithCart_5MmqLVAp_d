@@ -1,9 +1,3 @@
-.cart > .modal--test {
-    display: none;
-}
-.cart:has( > .input--modal:checked ) > .modal--test {
-    display: flex;
-}
 .button--modal{
     position: relative;
     display: flex;
