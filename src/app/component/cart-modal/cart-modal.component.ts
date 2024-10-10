@@ -10,13 +10,10 @@ import { CartItem, Product } from '../../product.model';
 })
 export class CartModalComponent {
   cart = input<CartItem[]>();
+  orderTotal = input<number>(0);
 
-  removeProduct = output<any>()
-  resetCart = output<any>()
+  resetCart = output<any>();
 
-  removeThisProduct(product: Product){
-    this.removeProduct.emit(product);
-  }
 
   resetMyCart(){
     this.resetCart.emit(this.cart());
