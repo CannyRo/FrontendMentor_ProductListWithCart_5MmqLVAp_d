@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: 'Red Hat Text';
-    src: url("/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
+    src: url("/FrontendMentor_ProductListWithCart_5MmqLVAp_d/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
 }
 :root{
     /* == COLORS == */
