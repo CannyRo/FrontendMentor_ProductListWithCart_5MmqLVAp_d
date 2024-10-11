@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
   private readonly http = inject(HttpClient);
-  private jsonUrl = "/FrontendMentor_ProductListWithCart_5MmqLVAp_d/data/data.json";
+  private jsonUrl = "/data/data.json";
 
   constructor() { 
     this.getData();

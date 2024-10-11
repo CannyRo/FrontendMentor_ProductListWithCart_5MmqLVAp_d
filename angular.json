@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "FrontendMentor_ProductListWithCart_5MmqLVAp_d": {
+    "frontend-mentor-product-list-with-cart-5-mmq-lvap-d": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
