@@ -1,5 +1,4 @@
 .cart{
-    grid-area: cart;
     display: flex;
     flex-direction: column;
     gap: 24px;
