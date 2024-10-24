@@ -1,32 +1,44 @@
-.layout{
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "dessert"
+        "cart";
     padding: 24px;
     width: 100%;
+    justify-content: center;
 }
-.dessert{
+
+.dessert {
+    grid-area: dessert;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.title{
+
+.title {
     margin-bottom: 32px;
     font-style: normal;
     font-optical-sizing: auto;
-    font-stretch:normal;
-    font-weight:bold;
+    font-stretch: normal;
+    font-weight: bold;
     font-size: 40px;
     line-height: 48px;
 }
-@media(min-width: 768px){
-    .layout{
+
+@media(min-width: 768px) {
+    .layout {
         display: flex;
         flex-direction: column;
         padding: 40px;
     }
 }
-@media(min-width: 1440px){
-    .layout{
-        display: flex;
-        flex-direction: row;
+
+@media(min-width: 1440px) {
+    .layout {
+        grid-template-columns: 800px 384px;
+        grid-template-areas:
+            "dessert cart";
         justify-content: center;
         padding: 88px 40px;
         gap: 32px;
